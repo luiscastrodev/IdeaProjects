@@ -8,3 +8,5 @@ fun max(a: Int, b: Int): Int {
 }
 
 fun max1(x: Int, b: Int) = x + b
+
+fun max2(x: Int, b: Int) = x + b

@@ -1,9 +1,14 @@
 fun main(){
 
-    print(People(20,10).IsShow)
+   /* print(People(20,10).IsShow)
     print(People(2,3).IsSize)
-    print(People(2,3).IsShow2)
+    print(People(2,3).IsShow2)*/
 
+    //var person  = Person("Person1",210)
+    var person2  = Person(1,"Person2")
+
+    //print("${person.name}  ${person.age}")
+    print("${person2.name}  ${person2.age}")
 }
 
 class People(
@@ -23,4 +28,10 @@ class People(
     fun isShow (): Boolean{
         return  heigth > with
     }
+}
+
+class Person(val name: String, var age: Int) {
+    constructor(name: String) : this(name, 0)
+    constructor(yearOfBirth: Int, name: String)
+            : this(name, 2018 - yearOfBirth)
 }

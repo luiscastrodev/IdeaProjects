@@ -4,8 +4,7 @@ fun main(){
     var sum :  Int = 0
     var qtd :  Int = 0
 
-    while (temp != 999){
-
+    do{
         println("Put your temp or 999 to logout")
 
         temp =  readLine()!!.toInt()
@@ -16,6 +15,7 @@ fun main(){
 
         }
     }
+    while (temp != 999)
 
     println("Average is ${sum / qtd} ")
 }

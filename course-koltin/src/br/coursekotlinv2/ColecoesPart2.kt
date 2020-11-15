@@ -72,16 +72,18 @@ fun main() {
 
 
     // Faça uma lista com o nome dos pratos
+      data.forEach { println( "pratos: ${it.name}") }
 
     // Qual a média de calor de todas as receitas?
-
-    // Lista de dados simples
-
-    // Eliminar receitas com mesmo nome
+    val media = data.count()
+    val total = data.sumBy { it.calories } / media
+    println("pratos: $total")
 
     // Ordenar uma lista
+    data.sortedBy { it.name }
 
     // Inverter uma lista
+    data.reversed()
 }
 
 
